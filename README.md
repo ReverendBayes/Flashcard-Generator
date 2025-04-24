@@ -3,6 +3,7 @@
 **PDF → Anki flashcards** in under 10 seconds with GPT-4 Turbo.  
 Stop wrestling with highlights and manual Q/A—AutoFlash does the heavy lifting.
 
+# Why you need it 
 Convert PDFs into Anki flashcards using GPT-4 Turbo. Drop in any PDF (lecture slides, paper, textbook chapter). It generates flashcards.
 
 ---
@@ -24,7 +25,7 @@ All you need is one script—no Docker, no multi-repo spaghetti.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Single-file CLI**: drop in `flashgen.py` and go.  
 - **Smart chunking**: minimizes concept splits and avoids token limits.  
@@ -35,7 +36,7 @@ All you need is one script—no Docker, no multi-repo spaghetti.
 
 ---
 
-## 🔌 Requirements
+## Requirements
 
 - Python 3.7+  
 - [PyPDF2](https://pypi.org/project/PyPDF2/)  
@@ -46,3 +47,10 @@ Install with:
 
 ```bash
 pip install PyPDF2 openai==0.28.0 genanki
+```
+## Quickstart
+```bash
+python flashgen.py \
+  --input your_document.pdf \
+  --output your_flashcards.apkg
+```
